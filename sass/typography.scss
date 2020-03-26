@@ -1,0 +1,105 @@
+@import 'colour.scss';
+@import 'responsive.scss';
+
+$primary-stack: 'Karla', sans-serif;
+$secondary-stack: 'Helvetica', sans-serif;
+$base-font-size: 21px;
+$line-height-body: 1.5;
+$line-height-heading: 1.2;
+$leading: $base-font-size * $line-height-body;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primary-stack;
+  font-weight: bold;
+  color: $heading-colour;
+  line-height: $line-height-heading;
+}
+
+small, p {
+  font-family: $secondary-stack;
+  color: $copy-colour;
+  line-height: $line-height-body;
+}
+
+h1 {
+  font-size: $base-font-size * 2.2;
+}
+h2 {
+  font-size: $base-font-size * 2;
+}
+h3 {
+  font-size: $base-font-size * 1.8;
+}
+h4 {
+  font-size: $base-font-size * 1.6;
+}
+h5 {
+  font-size: $base-font-size * 1.4;
+}
+h6 {
+  font-size: $base-font-size * 1.2;
+}
+p {
+  font-size: $base-font-size;
+}
+small {
+  font-size: $base-font-size * 0.8;
+}
+
+// Tablet
+
+@media (max-width: $breakpoint-tablet) {
+  h1 {
+    font-size: $base-font-size * $tablet-scale * 2.2;
+  }
+  h2 {
+    font-size: $base-font-size * $tablet-scale * 2;
+  }
+  h3 {
+    font-size: $base-font-size * $tablet-scale * 1.8;
+  }
+  h4 {
+    font-size: $base-font-size * $tablet-scale * 1.6;£
+  }
+  h5 {
+    font-size: $base-font-size * $tablet-scale * 1.4;
+  }
+  h6 {
+    font-size: $base-font-size * $tablet-scale * 1.2;
+  }
+  p {
+    font-size: $base-font-size * $tablet-scale;
+  }
+  small {
+    font-size: $base-font-size * $tablet-scale * 0.8;
+  }
+}
+
+
+@media (max-width: $breakpoint-phone-large) {
+  h1 {
+    font-size: $base-font-size * $mobile-scale * 2.2;
+  }
+  h2 {
+    font-size: $base-font-size * $mobile-scale * 2;
+  }
+  h3 {
+    font-size: $base-font-size * $mobile-scale * 1.8;
+  }
+  h4 {
+    font-size: $base-font-size * $mobile-scale * 1.6;
+  }
+  h5 {
+    font-size: $base-font-size * $mobile-scale * 1.4;
+  }
+  h6 {
+    font-size: $base-font-size * $mobile-scale * 1.2;
+  }
+  p {
+    font-size: $base-font-size * $mobile-scale;
+  }
+  small {
+    font-size: $base-font-size * $mobile-scale * 0.8;
+  }
+}
