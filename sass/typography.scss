@@ -1,10 +1,20 @@
 @import 'colour.scss';
 @import 'responsive.scss';
 
+// @font-face {
+//   font-family: 'graft';
+//   src:  url('fonts/graft.woff2') format('woff2'),
+//         url('fonts/graft.woff') format('woff');
+// }
+
+
 @font-face {
   font-family: 'graft';
-  src:  url('fonts/graft.woff2') format('woff2'),
-        url('fonts/graft.woff') format('woff');
+  src:  url('http://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff2') format('woff2'),
+        url('http://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff') format('woff'),
+        local ('fonts/graft.woff2'),
+        local ('fonts/graft.woff');
+
 }
 
 
