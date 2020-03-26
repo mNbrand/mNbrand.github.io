@@ -1,7 +1,14 @@
 @import 'colour.scss';
 @import 'responsive.scss';
 
-$primary-stack: 'Karla', sans-serif;
+@font-face {
+  font-family: 'graft';
+  src:  url('graft.woff2') format('woff2'),
+        url('graft.woff') format('woff');
+}
+
+
+$primary-stack: 'graft', sans-serif;
 $secondary-stack: 'Helvetica', sans-serif;
 $base-font-size: 21px;
 $line-height-body: 1.5;
