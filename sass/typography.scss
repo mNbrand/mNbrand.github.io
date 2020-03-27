@@ -19,24 +19,16 @@
 //         url('https://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff') format('woff');
 // }
 
+
+
 $primary-stack: 'graft', 'titling-gothic-fb-skyline', sans-serif;
 $secondary-stack: 'Libre Baskerville', serif;
 $base-font-size: 21px;
 $line-height-body: 1.5;
-$line-height-heading: 0.9;
+$line-height-heading: 0.75;
 $leading: $base-font-size * $line-height-body;
-$letter-spacing-heading: 2px;
+$letter-spacing-heading: -1px;
 $letter-spacing-copy: 0.2;
-
-
-// $primary-stack: 'graft', 'titling-gothic-fb-skyline', sans-serif;
-// $secondary-stack: 'Libre Baskerville', serif;
-// $base-font-size: 21px;
-// $line-height-body: 1.5;
-// $line-height-heading: 0.75;
-// $leading: $base-font-size * $line-height-body;
-// $letter-spacing-heading: -1px;
-// $letter-spacing-copy: 0.2;
 
 
 h1, h2, h3, h4, h5, {
