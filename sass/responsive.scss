@@ -6,6 +6,16 @@ $breakpoint-desktop-medium: 1440px;
 $breakpoint-desktop-large: 1920px;
 $breakpoint-desktop-mega: 2600px;
 
+$tablet-scale: 0.875;
+$mobile-scale: 0.75;
 
-$tablet-scale: 0.9;
-$mobile-scale: 0.8;
+@media (max-width: $breakpoint-tablet) {
+  .logo {
+    width: 150px * $mobile-scale;
+  }
+  nav .icon {
+    display:none;
+  }
+
+
+}

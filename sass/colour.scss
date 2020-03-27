@@ -1,19 +1,38 @@
 // colour palette
-$theme-primary: green;
-$theme-secondary: green;
+$sunset-orange: #FB2800;
+// #FE4902;
+$citrine: #FF9F1C;
+$sapphire: #0A014F;
+$candy-pink: #FFDEE5;
+$cool-grey: #EDF2F9;
+$tabriz-blue: #006FA4;
+$powder-green: #E4F8E5;
+
 
 // text colour
 
-$copy-colour: green;
+$copy-colour: black;
 $heading-colour: black;
-$copy-colour-light: green;
+$copy-colour-light: white;
 $heading-colour-light: white;
 
-// typography
+
+
+// BACKGROUND CLASSES
+.candy-pink-bg {
+  background-color: $candy-pink;
+}
+.powder-green-bg {
+  background-color: $powder-green;
+}
 
 
 
-// repsonsive
+// TEXT CLASSES
+.sunset-orange-text {
+  color: $sunset-orange;
+}
 
-$tablet-scale: 0.9;
-$mobile-scale: 0.8;
+.sapphire-text {
+  color: $sapphire;
+}

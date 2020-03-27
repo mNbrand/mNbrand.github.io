@@ -14,109 +14,167 @@
         url('http://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff') format('woff'),
         local ('fonts/graft.woff2'),
         local ('fonts/graft.woff');
-
 }
 
-
 $primary-stack: 'graft', sans-serif;
-$secondary-stack: 'Helvetica', sans-serif;
+$secondary-stack: 'Libre Baskerville', serif;
 $base-font-size: 21px;
 $line-height-body: 1.5;
-$line-height-heading: 1.2;
+$line-height-heading: 0.75;
 $leading: $base-font-size * $line-height-body;
+$letter-spacing-heading: -1px;
+$letter-spacing-copy: 0.2;
 
+$randomise: (random(11) + 4) + deg;
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, {
   font-family: $primary-stack;
   font-weight: bold;
   color: $heading-colour;
   line-height: $line-height-heading;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-heading;
 }
 
-small, p {
+small, p, h6 {
   font-family: $secondary-stack;
   color: $copy-colour;
   line-height: $line-height-body;
+  letter-spacing: $letter-spacing-copy;
 }
 
+p a{
+    color: $copy-colour;
+}
+
+// p a:hover{
+//     color: $copy-colour;
+//     text-decoration: none;
+//     font-weight: bold;
+// }
+
+h6 {
+  color: $heading-colour;
+}
+
+
 h1 {
-  font-size: $base-font-size * 2.2;
+  font-size: $base-font-size * 9;
 }
 h2 {
-  font-size: $base-font-size * 2;
+  font-size: $base-font-size * 7.5;
 }
 h3 {
-  font-size: $base-font-size * 1.8;
+  font-size: $base-font-size * 6;
 }
 h4 {
-  font-size: $base-font-size * 1.6;
+  font-size: $base-font-size * 4.5;
 }
 h5 {
-  font-size: $base-font-size * 1.4;
+  font-size: $base-font-size * 3;
 }
 h6 {
-  font-size: $base-font-size * 1.2;
+  font-size: $base-font-size * 1.5;
 }
 p {
   font-size: $base-font-size;
 }
 small {
-  font-size: $base-font-size * 0.8;
+  font-size: $base-font-size * 0.75;
 }
 
 // Tablet
 
 @media (max-width: $breakpoint-tablet) {
   h1 {
-    font-size: $base-font-size * $tablet-scale * 2.2;
+    font-size: $base-font-size * $tablet-scale * 9;
   }
   h2 {
-    font-size: $base-font-size * $tablet-scale * 2;
+    font-size: $base-font-size * $tablet-scale * 7.5;
   }
   h3 {
-    font-size: $base-font-size * $tablet-scale * 1.8;
+    font-size: $base-font-size * $tablet-scale * 6;
   }
   h4 {
-    font-size: $base-font-size * $tablet-scale * 1.6;
+    font-size: $base-font-size * $tablet-scale * 4.5;
   }
   h5 {
-    font-size: $base-font-size * $tablet-scale * 1.4;
+    font-size: $base-font-size * $tablet-scale * 3;
   }
   h6 {
-    font-size: $base-font-size * $tablet-scale * 1.2;
+    font-size: $base-font-size * $tablet-scale * 1.5;
   }
   p {
     font-size: $base-font-size * $tablet-scale;
   }
   small {
-    font-size: $base-font-size * $tablet-scale * 0.8;
+    font-size: $base-font-size * $tablet-scale * 0.75;
   }
 }
 
 
 @media (max-width: $breakpoint-phone-large) {
   h1 {
-    font-size: $base-font-size * $mobile-scale * 2.2;
+    font-size: $base-font-size * $mobile-scale * 9;
   }
   h2 {
-    font-size: $base-font-size * $mobile-scale * 2;
+    font-size: $base-font-size * $mobile-scale * 7.5;
   }
   h3 {
-    font-size: $base-font-size * $mobile-scale * 1.8;
+    font-size: $base-font-size * $mobile-scale * 6;
   }
   h4 {
-    font-size: $base-font-size * $mobile-scale * 1.6;
+    font-size: $base-font-size * $mobile-scale * 4.5;
   }
   h5 {
-    font-size: $base-font-size * $mobile-scale * 1.4;
+    font-size: $base-font-size * $mobile-scale * 3;
   }
   h6 {
-    font-size: $base-font-size * $mobile-scale * 1.2;
+    font-size: $base-font-size * $mobile-scale * 1.5;
   }
   p {
     font-size: $base-font-size * $mobile-scale;
   }
   small {
-    font-size: $base-font-size * $mobile-scale * 0.8;
+    font-size: $base-font-size * $mobile-scale * 0.75;
   }
+  .logo {
+    width: 150px * $mobile-scale;
+  }
+
+}
+
+
+// STYLING
+
+
+.lowercase-m {
+  text-transform: lowercase;
+}
+
+
+
+.rotate0.5 {
+  transform: rotate(0.5deg);
+}
+.rotate1 {
+  transform: rotate(1deg);
+}
+.rotate1.5 {
+  transform: rotate(1.5deg);
+}
+.rotate2 {
+  transform: rotate(2deg);
+}
+.rotate-0.5 {
+  transform: rotate(-0.5deg);
+}
+.rotate-1 {
+  transform: rotate(-1deg);
+}
+.rotate-1.5 {
+  transform: rotate(-1.5deg);
+}
+.rotate-2 {
+  transform: rotate(-2deg);
 }
