@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, {
   color: $heading-colour;
   line-height: $line-height-heading;
   text-transform: uppercase;
+  font-weight: bold;
   letter-spacing: $letter-spacing-heading;
 }
 
