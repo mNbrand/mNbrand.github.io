@@ -10,10 +10,9 @@
 
 @font-face {
   font-family: 'graft';
-  src:  url('http://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff2') format('woff2'),
-        url('http://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff') format('woff'),
-        local ('fonts/graft.woff2'),
-        local ('fonts/graft.woff');
+  src:  url('https://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff2') format('woff2'),
+        url('https://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff') format('woff'),
+
 }
 
 $primary-stack: 'graft', sans-serif;
