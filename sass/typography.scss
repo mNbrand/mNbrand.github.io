@@ -37,17 +37,19 @@
 
 
 
-$primary-stack: 'graft', 'titling-gothic-fb-skyline', sans-serif;
-$secondary-stack: 'Libre Baskerville', serif;
-$base-font-size: 21px;
-$line-height-body: 1.6;
-$line-height-heading: 0.75;
+$primary-stack:  bureau-grot-extra-compressed,sans-serif;
+$secondary-stack: 'Karla', sans-serif;
+$tertiary-stack: 'handwriting', sans-serif;
+$base-font-size: 20px;
+$line-height-body: 1.5;
+$line-height-heading: 0.8;
 $leading: $base-font-size * $line-height-body;
-$letter-spacing-heading: -2px;
-$letter-spacing-copy: 0.3px;
+$letter-spacing-heading: 1px;
+$letter-spacing-copy: 0px;
 
 
-h1, h2, h3, h4, h5, {
+
+h1, h2, h3, h4, {
   font-family: $primary-stack;
   color: $heading-colour;
   line-height: $line-height-heading;
@@ -62,6 +64,9 @@ small, p, h6 {
   letter-spacing: $letter-spacing-copy;
 }
 
+h5 {
+  font-family: $tertiary-stack;
+}
 p a{
     color: $copy-colour;
 }
@@ -82,7 +87,7 @@ a:hover {
 }
 
 h1 {
-  font-size: $base-font-size * 9;
+  font-size: $base-font-size * 8;
 }
 h2 {
   font-size: $base-font-size * 7.5;
@@ -94,10 +99,10 @@ h4 {
   font-size: $base-font-size * 4.5;
 }
 h5 {
-  font-size: $base-font-size * 3;
+  font-size: $base-font-size * 2;
 }
 h6 {
-  font-size: $base-font-size * 1.4;
+  font-size: $base-font-size;
 }
 p {
   font-size: $base-font-size;
@@ -110,7 +115,7 @@ small {
 
 @media (max-width: $breakpoint-tablet) {
   h1 {
-    font-size: $base-font-size * $tablet-scale * 9;
+    font-size: $base-font-size * $tablet-scale * 8;
   }
   h2 {
     font-size: $base-font-size * $tablet-scale * 7.5;
@@ -122,10 +127,10 @@ small {
     font-size: $base-font-size * $tablet-scale * 4.5;
   }
   h5 {
-    font-size: $base-font-size * $tablet-scale * 3;
+    font-size: $base-font-size * $tablet-scale * 2;
   }
   h6 {
-    font-size: $base-font-size * $tablet-scale * 1.4;
+    font-size: $base-font-size * $tablet-scale;
   }
   p {
     font-size: $base-font-size * $tablet-scale;
@@ -138,7 +143,7 @@ small {
 
 @media (max-width: $breakpoint-phone-large) {
   h1 {
-    font-size: $base-font-size * $mobile-scale * 9;
+    font-size: $base-font-size * $mobile-scale * 8;
   }
   h2 {
     font-size: $base-font-size * $mobile-scale * 7.5;
@@ -150,10 +155,10 @@ small {
     font-size: $base-font-size * $mobile-scale * 4.5;
   }
   h5 {
-    font-size: $base-font-size * $mobile-scale * 3;
+    font-size: $base-font-size * $mobile-scale * 2;
   }
   h6 {
-    font-size: $base-font-size * $mobile-scale * 1.4;
+    font-size: $base-font-size * $mobile-scale;
   }
   p {
     font-size: $base-font-size * $mobile-scale;
@@ -172,7 +177,7 @@ small {
 
 @media (min-width: $breakpoint-desktop-large) {
   h1 {
-    font-size: $base-font-size * $large-scale * 9;
+    font-size: $base-font-size * $large-scale * 8;
   }
   h2 {
     font-size: $base-font-size * $large-scale * 7.5;
@@ -184,10 +189,10 @@ small {
     font-size: $base-font-size * $large-scale * 4.5;
   }
   h5 {
-    font-size: $base-font-size * $large-scale * 3;
+    font-size: $base-font-size * $large-scale * 2;
   }
   h6 {
-    font-size: $base-font-size * 1.35;
+    font-size: $base-font-size;
   }
   p {
     font-size: $base-font-size;
@@ -234,86 +239,47 @@ small {
   transform: rotate(-2deg);
 }
 
-#type-option-2 h1, #type-option-2 h2, #type-option-2 h3, #type-option-2 h4, #type-option-2 h5 {
-  font-family: amplitude-compressed,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 170px;
-}
-
-
-#type-option-3 h1, #type-option-3 h2, #type-option-3 h3, #type-option-3 h4, #type-option-3 h5 {
-  font-family: agency-fb-condensed,sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 190px;
-  line-height: 0.8;
-}
-
-
-#type-option-4 h1,#type-option-4 h2, #type-option-4 h3, #type-option-4 h4, #type-option-4 h5 {
-  font-family: bureau-grot-extra-compressed,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 0.8;
-  letter-spacing: 1px;
-
-}
-
-#type-option-4 h6, #type-option-4 p, #type-option-4 small {
-  font-family: 'karla', sans-serif;
-  font-style: normal;
-
-
-}
-
-#type-option-4 h6 {
-  line-height: 1.2;
-    font-weight:400;
-
-}
-
-
-
-#type-option-5 h1, #type-option-5 h2, #type-option-5 h3, #type-option-5 h4, #type-option-5 h5 {
-  font-family: bureau-grot-extra-compressed,sans-serif;
-  font-style: normal;
-  line-height: 0.8;
-  letter-spacing: 1px;
-
-}
-
-#type-option-5 h6, #type-option-5 p, #type-option-5 small, #type-option-6 h6, #type-option-6 p, #type-option-6 small {
-  font-family: 'karla', sans-serif;
-  font-style: normal;
-  font-size:20px;
-  letter-spacing: 0px;
-  line-height: 33px;
-}
-
-
-
-#type-option-6 h1, #type-option-6 h2, #type-option-6 h3, #type-option-6 h4, #type-option-5 h5 {
-  font-family: bureau-grot-compressed, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 185px;
-  line-height: 0.8;
-  letter-spacing: -3px;
-
-
-}
-
-#type-option-5 small, #type-option-6 small {
-  font-family: 'handwriting';
-  font-size: 40px;
-}
-
-
-#type-option-5 h5 {
-  font-family: 'handwriting';
-  font-size: 60px;
-}
+//
+//
+// #type-option-5 h1, #type-option-5 h2, #type-option-5 h3, #type-option-5 h4, #type-option-5 h5 {
+//   font-family: bureau-grot-extra-compressed,sans-serif;
+//   font-style: normal;
+//   line-height: 0.8;
+//   letter-spacing: 1px;
+//
+// }
+//
+// #type-option-5 h6, #type-option-5 p, #type-option-5 small, #type-option-6 h6, #type-option-6 p, #type-option-6 small {
+//   font-family: 'karla', sans-serif;
+//   font-style: normal;
+//   font-size:20px;
+//   letter-spacing: 0px;
+//   line-height: 33px;
+// }
+//
+//
+//
+// #type-option-6 h1, #type-option-6 h2, #type-option-6 h3, #type-option-6 h4, #type-option-5 h5 {
+//   font-family: bureau-grot-compressed, sans-serif;
+//   font-weight: 400;
+//   font-style: normal;
+//   font-size: 185px;
+//   line-height: 0.8;
+//   letter-spacing: -3px;
+//
+//
+// }
+//
+// #type-option-5 small, #type-option-6 small {
+//   font-family: 'handwriting';
+//   font-size: 40px;
+// }
+//
+//
+// #type-option-5 h5 {
+//   font-family: 'handwriting';
+//   font-size: 60px;
+// }
 
 
 .container {
@@ -331,4 +297,10 @@ nav .container {
 
 nav {
 
+}
+
+
+.type-2 h1 {
+  font-family:  'bureau-grot-compressed', sans-serif;
+  letter-spacing: -3px;
 }
