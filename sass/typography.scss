@@ -13,22 +13,38 @@
         url('../fonts/graft.woff') format('woff');
 }
 
-// @font-face {
-//   font-family: 'graft';
-//   src:  url('https://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff2') format('woff2'),
-//         url('https://github.com/mNbrand/mNbrand.github.io/blob/master/fonts/graft.woff') format('woff');
-// }
+@font-face {
+  font-family: 'boxout';
+  src:  url('../fonts/Boxout02-Black-Trial.woff2') format('woff2'),
+        url('../fonts/Boxout02-Black-Trial.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'boxout wide';
+  src:  url('../fonts/Boxout02-Wide-Black-Trial.woff2') format('woff2'),
+        url('../fonts/Boxout02-Wide-Black-Trial.woff') format('woff');
+
+}
+
+
+@font-face {
+  font-family: 'handwriting';
+  src:  url('../fonts/PremiumUltra31.woff2') format('woff2'),
+        url('../fonts/PremiumUltra31.woff') format('woff');
+
+}
 
 
 
 $primary-stack: 'graft', 'titling-gothic-fb-skyline', sans-serif;
 $secondary-stack: 'Libre Baskerville', serif;
 $base-font-size: 21px;
-$line-height-body: 1.5;
+$line-height-body: 1.6;
 $line-height-heading: 0.75;
 $leading: $base-font-size * $line-height-body;
-$letter-spacing-heading: -1px;
-$letter-spacing-copy: 0.2;
+$letter-spacing-heading: -2px;
+$letter-spacing-copy: 0.3px;
 
 
 h1, h2, h3, h4, h5, {
@@ -36,7 +52,6 @@ h1, h2, h3, h4, h5, {
   color: $heading-colour;
   line-height: $line-height-heading;
   text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: $letter-spacing-heading;
 }
 
@@ -59,6 +74,7 @@ p a{
 
 h6 {
   color: $heading-colour;
+  font-weight: bold;
 }
 
 a:hover {
@@ -81,7 +97,7 @@ h5 {
   font-size: $base-font-size * 3;
 }
 h6 {
-  font-size: $base-font-size * 1.5;
+  font-size: $base-font-size * 1.4;
 }
 p {
   font-size: $base-font-size;
@@ -109,13 +125,13 @@ small {
     font-size: $base-font-size * $tablet-scale * 3;
   }
   h6 {
-    font-size: $base-font-size * $tablet-scale * 1.5;
+    font-size: $base-font-size * $tablet-scale * 1.4;
   }
   p {
     font-size: $base-font-size * $tablet-scale;
   }
   small {
-    font-size: $base-font-size * $tablet-scale * 0.75;
+    font-size: $base-font-size * $tablet-scale * 0.9;
   }
 }
 
@@ -137,18 +153,49 @@ small {
     font-size: $base-font-size * $mobile-scale * 3;
   }
   h6 {
-    font-size: $base-font-size * $mobile-scale * 1.5;
+    font-size: $base-font-size * $mobile-scale * 1.4;
   }
   p {
     font-size: $base-font-size * $mobile-scale;
   }
   small {
-    font-size: $base-font-size * $mobile-scale * 0.75;
+    font-size: $base-font-size * $mobile-scale * 0.9;
   }
   .logo {
     width: 150px * $mobile-scale;
     height: 91px * $mobile-scale;
   }
+
+}
+
+
+
+@media (min-width: $breakpoint-desktop-large) {
+  h1 {
+    font-size: $base-font-size * $large-scale * 9;
+  }
+  h2 {
+    font-size: $base-font-size * $large-scale * 7.5;
+  }
+  h3 {
+    font-size: $base-font-size * $large-scale * 6;
+  }
+  h4 {
+    font-size: $base-font-size * $large-scale * 4.5;
+  }
+  h5 {
+    font-size: $base-font-size * $large-scale * 3;
+  }
+  h6 {
+    font-size: $base-font-size * 1.35;
+  }
+  p {
+    font-size: $base-font-size;
+  }
+  small {
+    font-size: $base-font-size * $large-scale * 0.75;
+  }
+
 
 }
 
@@ -185,4 +232,100 @@ small {
 }
 .rotate-2 {
   transform: rotate(-2deg);
+}
+
+#type-option-2 h1, #type-option-2 h2, #type-option-2 h3, #type-option-2 h4, #type-option-2 h5 {
+  font-family: amplitude-compressed,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 170px;
+}
+
+
+#type-option-3 h1, #type-option-3 h2, #type-option-3 h3, #type-option-3 h4, #type-option-3 h5 {
+  font-family: agency-fb-condensed,sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 190px;
+  line-height: 0.8;
+}
+
+
+#type-option-4 h1,#type-option-4 h2, #type-option-4 h3, #type-option-4 h4, #type-option-4 h5 {
+  font-family: bureau-grot-extra-compressed,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: 1px;
+
+}
+
+#type-option-4 h6, #type-option-4 p, #type-option-4 small {
+  font-family: 'karla', sans-serif;
+  font-style: normal;
+
+
+}
+
+#type-option-4 h6 {
+  line-height: 1.2;
+    font-weight:400;
+
+}
+
+
+
+#type-option-5 h1, #type-option-5 h2, #type-option-5 h3, #type-option-5 h4, #type-option-5 h5 {
+  font-family: bureau-grot-extra-compressed,sans-serif;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: 1px;
+
+}
+
+#type-option-5 h6, #type-option-5 p, #type-option-5 small {
+  font-family: 'karla', sans-serif;
+  font-style: normal;
+  font-size:20px;
+  letter-spacing: 0px;
+  line-height: 33px;
+}
+
+
+
+#type-option-6 h1, #type-option-6 h2, #type-option-6 h3, #type-option-6 h4, #type-option-5 h5 {
+  font-family: 'boxout wide',sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 160px;
+  line-height: 1;
+}
+
+#type-option-5 small {
+  font-family: 'handwriting';
+  font-size: 40px;
+}
+
+
+#type-option-5 h5 {
+  font-family: 'handwriting';
+  font-size: 60px;
+}
+
+
+.container {
+  padding-bottom: 0px;
+}
+
+
+.row:nth-child(1) {
+  padding-top: 150px;
+}
+
+nav .container {
+  padding-bottom:0px;
+}
+
+nav {
+
 }

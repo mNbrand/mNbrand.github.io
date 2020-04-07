@@ -6,12 +6,14 @@ $breakpoint-desktop-medium: 1440px;
 $breakpoint-desktop-large: 1920px;
 $breakpoint-desktop-mega: 2600px;
 
-$tablet-scale: 0.75;
-$mobile-scale: 0.5;
+$tablet-scale: 0.85;
+$mobile-scale: 0.75;
+$large-scale: 1.25;
 
 @media (max-width: $breakpoint-tablet) {
   .logo {
-    width: 150px * $mobile-scale;
+    width: 100px * $mobile-scale;
+    height: 164px * $mobile-scale;
   }
   nav .icon {
     display: none;
@@ -19,3 +21,12 @@ $mobile-scale: 0.5;
 
 
 }
+.custom-cursor {
+  cursor: url('../img/icon-email.png'), auto;
+}
+
+// @media (min-width: 2000px) {
+//   .container .row {
+//       width: 1920px;
+//   }
+// }

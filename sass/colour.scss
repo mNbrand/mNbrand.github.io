@@ -2,12 +2,21 @@
 $sunset-orange: #FB2800;
 // #FE4902;
 $citrine: #FF9F1C;
-$sapphire: #0A014F;
+$sapphire: #003C83;
 $candy-pink: #FFDEE5;
 $cool-grey: #EDF2F9;
 $tabriz-blue: #006FA4;
 $powder-green: #E4F8E5;
-
+$carnation-pink: #FFAFC4;
+$lavender-grey: #DAD9F0;
+$link-water: #C4D7F2;
+$midnight-blue: #0A014F;
+$torch-red: #FF0028;
+$midnight-blue: #0A014F;
+$foam-banana: #FCF757;
+$mystic-grey: #DDE7EC;
+$navy-blue:#060182;
+$sherbert-green: #F0F6B4;
 
 // text colour
 
@@ -28,6 +37,18 @@ $heading-colour-light: white;
 
 
 
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 85vh;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  // font-family: sans-serif;
+
+}
+
 // TEXT CLASSES
 .sunset-orange-text {
   color: $sunset-orange;
@@ -35,4 +56,120 @@ $heading-colour-light: white;
 
 .sapphire-text {
   color: $sapphire;
+}
+
+.candy-pink-text {
+  color: $candy-pink;
+}
+.midnight-blue-text {
+  color: $midnight-blue;
+}
+
+.sherbert-green-text {
+  color: $sherbert-green;
+}
+
+.tabriz-blue-text {
+  color: $tabriz-blue;
+}
+
+.powder-green-text {
+  color: $powder-green;
+}
+.foam-banana-text {
+  color: $foam-banana;
+}
+
+.navy-blue-text {
+  color: $navy-blue;
+}
+
+.midnight-blue-text {
+  color: $midnight-blue;
+}
+/* Setting fade transition and default settings */
+body {
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+}
+
+
+
+/* colours */
+.color-powder-green {
+  background-color: $powder-green;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sapphire;
+  }
+}
+.color-carnation-pink {
+  background-color: $carnation-pink;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $heading-colour;
+  }
+}
+.color-sunset-orange {
+  background-color: $sunset-orange;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $candy-pink;
+  }
+}
+.color-lavender-grey {
+  background-color: $lavender-grey;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $heading-colour;
+  }
+}
+.color-link-water {
+  background-color: $link-water;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sapphire;
+  }
+
+}
+.color-cool-grey {
+  background-color: $cool-grey;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sherbert-green;
+  }
+}
+.color-midnight-blue {
+  background-color: $midnight-blue;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sherbert-green;
+  }
+
+}
+.color-torch-red {
+  background-color: $torch-red;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sherbert-green;
+  }
+
+}
+.color-foam-banana {
+  background-color: $foam-banana;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sherbert-green;
+  }
+}
+.color-mystic-grey {
+  background-color: $mystic-grey;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $tabriz-blue;
+  }
+}
+.color-navy-blue {
+  background-color: $navy-blue;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sherbert-green;
+  }
+
+}
+.color-tabriz-blue {
+  background-color: $tabriz-blue;
+  h1, h2, h3, h4, h5, h6, p, small {
+    color: $sherbert-green;
+  }
+
 }
