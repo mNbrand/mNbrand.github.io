@@ -283,7 +283,7 @@ small {
 
 }
 
-#type-option-5 h6, #type-option-5 p, #type-option-5 small {
+#type-option-5 h6, #type-option-5 p, #type-option-5 small, #type-option-6 h6, #type-option-6 p, #type-option-6 small {
   font-family: 'karla', sans-serif;
   font-style: normal;
   font-size:20px;
@@ -294,14 +294,17 @@ small {
 
 
 #type-option-6 h1, #type-option-6 h2, #type-option-6 h3, #type-option-6 h4, #type-option-5 h5 {
-  font-family: 'boxout wide',sans-serif;
-  font-weight: 900;
+  font-family: bureau-grot-compressed, sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 160px;
-  line-height: 1;
+  font-size: 185px;
+  line-height: 0.8;
+  letter-spacing: -3px;
+
+
 }
 
-#type-option-5 small {
+#type-option-5 small, #type-option-6 small {
   font-family: 'handwriting';
   font-size: 40px;
 }
